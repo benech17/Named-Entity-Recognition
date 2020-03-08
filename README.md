@@ -1,25 +1,12 @@
 Machine Learning Notebooks
 ==========================
 
-This project aims at teaching you the fundamentals of Machine Learning in
-python. It contains the example code and solutions to the exercises in my O'Reilly book [Hands-on Machine Learning with Scikit-Learn and TensorFlow](http://shop.oreilly.com/product/0636920052289.do):
+I learned the fundamentals of Machine Learning in python with the O'Reilly book [Hands-on Machine Learning with Scikit-Learn and TensorFlow](http://shop.oreilly.com/product/0636920052289.do):
 
 [![book](http://akamaicovers.oreilly.com/images/0636920052289/cat.gif)](http://shop.oreilly.com/product/0636920052289.do)
 
-Simply open the [Jupyter](http://jupyter.org/) notebooks you are interested in:
-
-* Using [jupyter.org's notebook viewer](http://nbviewer.jupyter.org/github/ageron/handson-ml/blob/master/index.ipynb)
-    * note: [github.com's notebook viewer](https://github.com/ageron/handson-ml/blob/master/index.ipynb) also works but it is slower and the math formulas are not displayed correctly,
-* or by cloning this repository and running Jupyter locally. This option lets you play around with the code. In this case, follow the installation instructions below.
 
 # Installation
-
-First, you will need to install [git](https://git-scm.com/), if you don't have it already.
-
-Next, clone this repository by opening a terminal and typing the following commands:
-    $ git clone https://github.com/benech17/Named-Entity-Recognition.git
-    $ cd Named-Entity-Recognition
-
 If you are familiar with Python and you know how to install Python libraries, go ahead and install the libraries listed in `requirements.txt` and jump to the [Starting Jupyter](#starting-jupyter) section. If you need detailed instructions, please read on.
 
 ## Python & Required Libraries
@@ -28,9 +15,6 @@ On Linux, unless you know what you are doing, you should use your system's packa
 
     $ sudo apt-get update
     $ sudo apt-get install python3
-
-jump to the [Using pip](#using-pip) section.
-
 
 ## Using pip 
 you need to install several scientific Python libraries that are necessary for this project, in particular NumPy, Matplotlib, Pandas, Jupyter and TensorFlow (and a few others). For this, you can either use Python's integrated packaging system, pip, or you may prefer to use your system's own packaging system (if available, e.g. on Linux, or on MacOSX when using MacPorts or Homebrew). The advantage of using pip is that it is easy to create multiple isolated Python environments with different libraries and different library versions (e.g. one environment for each project). The advantage of using your system's packaging system is that there is less risk of having conflicts between your Python libraries and your system's other packages. Since I have many projects with different library requirements, I prefer to use pip with isolated environments. 
