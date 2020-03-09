@@ -61,9 +61,10 @@ there are 5 files that differ in the way of collecting data in order to feed the
 * Position_1293_Balanced_97%.ipynb : the position of each word is also a parameter.
 
 ## To Sum up 
-To create my first artificial neural network, I needed Data so I have made some pre-work as I found a way to collect sentences from newspapers articles and analyze it ( number of words,quotes,uppercase ...) as parameters.
-Once this Database (managed with phpmyadmin) created and completed, I used the StanfordPostagger library to tag each word from each sentences and then, I could use Tensorflow and Scikit-Learn to make my first artificial neural network.
-The way to implement a sentence into an input vectorn the number of neurons in each layers and the number of hidden Layers were central issues that I could get through thanks to the time I spend reading and understanding each part of this book.
+Before using any data or artificial neural network,I worked on linear regression,logistic regression etc.. 
+To create my first artificial neural network, I needed Data so I have made some pre-work as I found a way to collect sentences from newspapers articles and analyze it ( number of words,quotes,uppercase ...) as parameters. <br>
+Once this Database (managed with phpmyadmin) created and completed, I used the StanfordPostagger library to tag each word from each sentences and then, I could use Tensorflow and Scikit-Learn to make my first artificial neural network.<br>
+The way to implement a sentence into an input vectorn the number of neurons in each layers and the number of hidden Layers were central issues that I could get through thanks to the time I spend reading and understanding each part of this book.<br>
 The artificial neural network was made to find if a sentence (in French) contains a Named-Entity or not.The named-entity could be a person,a place or an organization.
 As a result, I tested the accuracy score with 3 tests: 
 * [the F1 score](https://en.wikipedia.org/wiki/F1_score) 
