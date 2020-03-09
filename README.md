@@ -1,9 +1,11 @@
-Machine Learning Notebooks
+Named Entity Recognition
 ==========================
 
-I learned the fundamentals of Machine Learning in python with the O'Reilly book [Hands-on Machine Learning with Scikit-Learn and TensorFlow](http://shop.oreilly.com/product/0636920052289.do):
+I made my first artificial neural network to find if a sentence (in French) contains a Named Entity (person,place,organization) or not. 
 
-[![book](http://akamaicovers.oreilly.com/images/0636920052289/cat.gif)](http://shop.oreilly.com/product/0636920052289.do)
+I learned the fundamentals of Machine Learning in python with the O'Reilly book [Hands-on Machine Learning with Scikit-Learn and TensorFlow](https://www.lpsm.paris/pageperso/has/source/Hand-on-ML.pdf):
+
+[![book](http://akamaicovers.oreilly.com/images/0636920052289/cat.gif)](https://www.lpsm.paris/pageperso/has/source/Hand-on-ML.pdf)
 
 
 # Installation
@@ -50,4 +52,23 @@ Okay! You can now start Jupyter, simply type:
 
 This should open up your browser, and you should see Jupyter's tree view, with the contents of the current directory. If your browser does not open automatically, visit [127.0.0.1:8888](http://127.0.0.1:8888/tree). Click on `index.ipynb` to get started!
 
-Congrats! You are ready to learn Machine Learning, hands on!
+# How to Use 
+there are 5 files that differ in the way of collecting data in order to feed the Artificial Neural Network.
+* Balanced_1293_91%.ipynb : the data is from a dataset of 1293 sentences and was balanced, 91% accuracy score.
+* Balanced_671_88%.ipynb : the data is from a dataset of 671 sentences and was balanced, 88% accuracy score.
+* ImBalanced_1293_87%.ipynb :  the data is from a dataset of 1293 sentences, 87% accuracy score.
+* ImBalanced_671_87%.ipynb :  the data is from a dataset of 671 sentences, 87% accuracy score.
+* Position_1293_Balanced_97%.ipynb : the position of each word is also a parameter.
+
+## To Sum up 
+To create my first artificial neural network, I needed Data so I have made some pre-work as I found a way to collect sentences from newspapers articles and analyze it ( number of words,quotes,uppercase ...) as parameters.
+Once this Database (managed with phpmyadmin) created and completed, I used the StanfordPostagger library to tag each word from each sentences and then, I could use Tensorflow and Scikit-Learn to make my first artificial neural network.
+The way to implement a sentence into an input vectorn the number of neurons in each layers and the number of hidden Layers were central issues that I could get through thanks to the time I spend reading and understanding each part of this book.
+The artificial neural network was made to find if a sentence (in French) contains a Named-Entity or not.The named-entity could be a person,a place or an organization.
+As a result, I tested the accuracy score with 3 tests: 
+* [the F1 score](https://en.wikipedia.org/wiki/F1_score) 
+* [the Matthews_correlation_coefficient](https://en.wikipedia.org/wiki/Matthews_correlation_coefficient)
+* [Simple accuracy score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html)
+
+
+and the model who take as additional parameter the position of each word in a sentence had 97% accuracy score.
