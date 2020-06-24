@@ -1,7 +1,7 @@
 Named Entity Recognition
 ==========================
 
-I made my first artificial neural network to find if a sentence (in French) contains a Named Entity (person,place,organization) or not. 
+I made my first artificial neural network to find if a sentence (in French) contains a Named Entity (person,place,organization) or not. (97% accuracy) 
 
 I learned the fundamentals of Machine Learning in python with the O'Reilly book [Hands-on Machine Learning with Scikit-Learn and TensorFlow](https://www.lpsm.paris/pageperso/has/source/Hand-on-ML.pdf):
 
